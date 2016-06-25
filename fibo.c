@@ -1,16 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-	int n,i=0,a=0,b=1;
-	printf("\nEnter a number");
-	scanf("%d",&n);
-	i=a+b;
-	while(i<n)
-	{
-		printf("%d",i);
-		a=b;
-		b=i;
-		i=a+b;
-	}	
-	return 0;
+	 int i, n, t1 = 0, t2 = 1,a=0;
+	 printf("Enter the number of terms: ");
+         scanf("%d",&n);
+         printf("Fibonacci Series: %d, %d, ", t1, t2);
+         for (i=3;i<=n;++i)
+              {
+                a=t1+t2;
+                t1=t2;
+                t2=a;
+                printf("%d",a);
+             }
+         return 0;
 }
